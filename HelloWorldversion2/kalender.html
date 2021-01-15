@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<!--Storlek och kompatibilitet-->
+        <meta charset="utf-8">
+        <link rel="icon" type="image.png" href="img/favicon-16x16.png" sizes="16x16">
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title>Kalender</title>
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<!--CSS-->
+		<link rel="stylesheet" href="css/style.css">
+     
+</head>
+
+<body>
+
+<!-- Detta är naven och loggan som finns på alla sidor -->
+
+
+  <div class="container">
+    <img src="img/logo.jpg" alt="schoolbook" class="img-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!--<a class="navbar-brand" href="#">Navbar</a>-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="huvudsida.html">Hem<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bilder.html">Bildgalleri</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="kalender.html">Kalender</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Logga ut</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+</div>
+
+<!-- Detta är själva kalendern -->  
+  
+<article class="calSchoolBook">
+<div class="month1">      
+  <ul>
+    <li class="prev liPoint" onclick="left()">&#10094;</li>
+    <li class="next liPoint" onclick="right()">&#10095;</li>
+    <li class="month">
+     Juli<br>
+     <span style="font-size:18px">2020</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mån</li>
+  <li>Tis</li>
+  <li>Ons</li>
+  <li>Tor</li>
+  <li>Fre</li>
+  <li>Lör</li>
+  <li>Sön</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li><button type="button" onclick="alert ('Föräldramöte kl 17:00')">3</button></li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li><span class="active">9</span></li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li><button type="button" onclick="alert ('Utflykt till Bokskogen! Matsäck medtages. Samling kl 08:00')">19</button></li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+</article>
+
+
+<!-- koden nedan hämtar "X" ikonen samt länkarna till de olika kontakterna som inte kommer att implementeras -->
+
+  <aside>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Erikas Pappa</a>
+  <a href="#">Sandras Pappa</a>
+  <a href="#">Sigurs Mamma</a>
+  <a href="#">Andreas Mamma</a>
+
+<div id="chatbox">					
+		<div id="chatWindow"></div>
+	</div>
+
+
+	<div class="input">
+		<input type="text" id="userInput"></input>
+		<input type="button" value="Send" onclick="postChat()" />
+	</div>
+</div>
+
+<!-- koden nedan hämtar meddelande ikonen i höger hörn samt kopplas till funktionen -->
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M2 1h12a1 1 0 0 1 1 1v11.586l-2-2A2 2 0 0 0 11.586 11H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+  <path fill-rule="evenodd" d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+</svg> </span>
+</div>
+</aside>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<!--Denna kopplar till scriptfilen så att man kan bläddra i kalendern-->
+	
+	<script src="js/script.js"></script>
+	<script src="js/kalender.js"></script>
+
+</body>
+
+</html>

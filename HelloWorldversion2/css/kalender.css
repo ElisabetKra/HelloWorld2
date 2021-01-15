@@ -1,0 +1,258 @@
+.content {
+  margin: 8%;
+  background-color: #fff;
+  padding:4rem 1rem 4rem 1rem;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, .05);
+}
+
+body {
+  margin: auto; 
+  font-family: 'Poppins', sans-serif;
+  background-color: #E6F4EA;
+}
+	
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.liPoint{
+  cursor: pointer;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+  margin: auto;
+  }
+
+.inlogning {
+  padding: 30px;
+  width: 100%;
+}
+
+.calSchoolBook input[type=text], .calSchoolBook input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.calSchoolBook button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.calSchoolBook button: hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: 20%;
+  padding: 10px 18px;
+  background-color: #ff4d4d;
+  margin: 8px 0;
+}
+
+
+.calSchoolBook a:link {
+  text-decoration: none;
+  color: #4d8f85;
+}
+
+
+.arrow {
+  border: solid #4d8f85;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+img {
+  height: 30%;
+  border-radius: 5px 5px 0 0;
+}
+
+.row {
+  text-align: center;
+  margin: auto;
+}
+
+.month {
+  font-size: 20px;
+  margin: 30px;
+  text-align: center;
+  color: #4d8f85;
+}
+
+
+.col-md-3 {
+  text-align: center;
+  padding: 25px;
+}
+
+
+.col-md-4 {
+  text-align: center;
+}
+
+
+.caption {
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.calSchoolBook article, aside, figcaption, figure, footer, hgroup, main, section {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+ 
+.month1 {
+  padding: 70px 25px;
+  width: 100%;
+  background: #4D8F85;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.month1 ul {
+  margin: 0px;
+  padding: 0;
+}
+
+.month1 ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  list-style:  none;
+}
+
+.month1 .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month1 .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  align-items: center;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #A3C2BD;
+  color: white !important
+}
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+
+  }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 10%;
+  right: 0;
+  background-color: #A3C2BD;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+#main {
+    position: fixed;
+    top: 10%;
+    right: 1%;
+    transition: margin-right .5s;
+    padding: 16px;
+}
+
+
+  
+  
